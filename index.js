@@ -2,6 +2,11 @@ var readlineSync = require('readline-sync');
 
 var score = 0;
 
+console.log("<---- Do You Know Me Quiz ---->", '\n')
+console.log("<---- R.U.L.E.S ---->", '\n')
+console.log("1) 1 score for every right answer")
+console.log("2) score greator than 3 will be considered as high score", '\n')
+
 var userName = readlineSync.question("What is your name : ")
 console.log("")
 console.log("Welcome " + userName + "! to the Quiz\n")
@@ -44,7 +49,7 @@ for (var i = 0; i < qna.length; ++i) {
 }
 console.log("Final score = " + score);
 var highscore = 3;
-if (score => highscore) {
+if (score > highscore) {
   console.log("Excellent! you have a high score ")
 }
 else {
