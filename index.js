@@ -5,7 +5,7 @@ var score = 0;
 console.log("<---- Do You Know Me Quiz ---->", '\n')
 console.log("<---- R.U.L.E.S ---->", '\n')
 console.log("1) 1 score for every right answer")
-console.log("2) score greator than 3 will be considered as high score", '\n')
+console.log("2) Score greator than 3 will be considered as high score", '\n')
 
 var userName = readlineSync.question("What is your name : ")
 console.log("")
@@ -35,14 +35,20 @@ var questionTwo = {
   answer: "20"
 }
 var questionThree = {
-  question: "3. what i am studing (course) ? ",
+  question: "3. What i am studing (course) ? ",
   answer: "CSE"
 }
 var questionFour = {
-  question: "4. what is my height in feets ? ",
+  question: "4. What is my height in feets ? ",
   answer: "5.6"
 }
-var qna = [questionOne, questionTwo, questionThree, questionFour];
+
+var questionFive = {
+  question: "5. Which is my favourite game in moblie ? ",
+  answer: "BGMI"
+}
+
+var qna = [questionOne, questionTwo, questionThree, questionFour, questionFive];
 
 for (var i = 0; i < qna.length; ++i) {
   check(qna[i].question, qna[i].answer);
