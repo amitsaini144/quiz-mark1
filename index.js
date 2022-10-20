@@ -44,7 +44,7 @@ var questionFour = {
 }
 
 var questionFive = {
-  question: "5. Which is my favourite game in moblie ? ",
+  question: "5. Which is my favourite game on mobile ? ",
   answer: "BGMI"
 }
 
